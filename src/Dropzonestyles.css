@@ -1,0 +1,91 @@
+/* Dropzone */
+.dzu-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 120px;
+  overflow: scroll;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.15s linear;
+  border: 2px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.dzu-dropzoneActive {
+  background-color: #deebff;
+  border-color: #2484ff;
+}
+
+/* Input */
+.dzu-input {
+  display: none;
+}
+
+.dzu-inputLabel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  color: #2484ff;
+  cursor: pointer;
+}
+
+/* Preview */
+.dzu-previewContainer {
+  padding: 40px 3%;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  z-index: 1;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+.dzu-previewStatusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.dzu-previewFileName {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Buttons */
+.dzu-submitButtonContainer {
+  margin: 24px 0;
+  z-index: 1;
+}
+
+.dzu-submitButton {
+  padding: 0 14px;
+  min-height: 32px;
+  background-color: #2484ff;
+  border: none;
+  border-radius: 4px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dzu-submitButton:disabled {
+  background-color: #e6e6e6;
+  color: #333;
+  cursor: unset;
+}

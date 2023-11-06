@@ -1,0 +1,143 @@
+/* globalStyles.css */
+
+/* Global styles */
+
+@font-face {
+  font-family: Plus Jakarta Sans;
+  src: local("Plus Jakarta Sans"),
+    url(https://cdn.socratease.co/js/soc-chunks-1.0.28/43e0fcf9ff600ba9fc405606f76923e9.woff) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Plus Jakarta Sans;
+  src: local("Plus Jakarta Sans"),
+    url(https://cdn.socratease.co/js/soc-chunks-1.0.28/c83769cd96015dcbcaf5664688ed9e14.woff) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+
+/* Utility classes */
+
+.stw-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.stw-flex {
+  display: flex;
+}
+
+.stw-grid {
+  display: grid;
+}
+
+/* Component styles */
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.button-primary {
+  background-color: #3f83f8;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: #f1f5f9;
+  color: #374151;
+}
+
+/* Page styles */
+
+.header {
+  background-color: #f9fafb;
+  padding: 1rem 0;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles */
+}
+
+/* Common Styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+html {
+  line-height: 1.5;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Forms */
+input, textarea, select {
+  appearance: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Components */
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(94 189 132 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+
+  .btn-secondary {
+    padding: 0.5rem 1rem;
+  }
+}
